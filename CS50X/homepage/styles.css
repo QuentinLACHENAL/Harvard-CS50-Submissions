@@ -1,0 +1,41 @@
+body {
+    background-color: #000033;
+    color: #212527;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+.header {
+    background-color: #477bff;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px gray;
+  display: block;
+  margin: auto;
+}
+
+table {
+    border: 1px;
+    text-align: center;
+}

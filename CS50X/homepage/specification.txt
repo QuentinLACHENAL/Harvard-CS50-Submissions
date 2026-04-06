@@ -1,0 +1,24 @@
+HTML tags:
+
+<!DOCTYPE html> (that defines the document as HTML5)
+<html> (Root element of the page)
+<head> (Contains metadata and links)
+<body> (Contains the visible content)
+<h1> (Main heading)
+<p> (Paragraph)
+<a> (Link)
+<button> (Clickable button)
+<img> (Displays an image)
+<table> (Creates a table)
+
+CSS properties:
+
+background-color (Sets the background color )
+color (Sets the text color)
+font-size (Defines the text size)
+margin (Sets the space around elements)
+text-align (Aligns text)
+
+I used a pretty really cool image bootstrap that stylise the image rounding the edges and putting some shadow behind the picture, I also used a javascript script to put a timer to show the time spend on the website by the user.
+
+...and also a suprise meowing button!

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your transaction history:
+{% endblock %}
+
+{% block main %}
+
+    <h1>Transaction history</h1>
+
+    <table class="table">
+        <thead>
+            <br>
+            <tr>
+                <th>Action</th>
+                <th>Stock symbol</th>
+                <th>Price</th>
+                <th>Shares</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr>
+                    <td>{{ transaction.action }}</td>
+                    <td>{{ transaction.symbol }}</td>
+                    <td>{{ transaction.price | usd }}</td>
+                    <td>{{ transaction.shares }}</td>
+                    <td>{{ transaction.timestamp }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="5" class="text-center">No transactions yet.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

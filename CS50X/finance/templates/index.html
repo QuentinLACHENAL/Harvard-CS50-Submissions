@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+    Portfolio
+
+{% endblock %}
+
+{% block main %}
+
+    <h1>Welcome to your portfolio of stocks:</h1>
+    <p></p>
+    <h2>Cash: {{ user_cash | usd }}</h2>
+    <p></p>
+    <h3>Total Portfolio Value: {{ grand_total | usd }}</h3>
+    <p></p>
+    <table class="table table-bordered mx-auto">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stock_data %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.total_shares }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ stock.total_value | usd }}</td>
+                </tr>
+
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+
+    <a href="/buy" class="btn btn-primary">Buy More Stocks</a>
+    <a href="/sell" class="btn btn-danger">Sell Stocks</a>
+
+{% endblock %}
